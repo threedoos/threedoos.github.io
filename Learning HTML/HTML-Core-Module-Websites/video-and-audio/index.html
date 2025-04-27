@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Darius Lee" />
+    <meta
+      name="description"
+      content="This is the website where I practised how to embed audio and video files."
+    />
+    <title>My Video/Audio Website</title>
+  </head>
+  <body>
+    <h1>Embedding a video file</h1>
+    <video
+      controls
+      muted
+      poster="../../My-First-Website/images/Spiderman-photo-1.avif"
+      width="1280"
+      height="720"
+    >
+      <source
+        src="media/physicshbl_magnetictrain_copy.webm"
+        type="video/webm"
+      />
+      <source src="media/physicshbl_magnetictrain_copy.mp4" type="video/mp4" />
+      <track
+        src="subtitles/subtitles_en.vtt"
+        srclang="en"
+        kind="subtitles"
+        label="English Subtitles"
+      />
+      <track
+        src="subtitles/subtitles_en.vtt"
+        srclang="en"
+        kind="captions"
+        label="English Captions"
+      />
+
+      <p>
+        Your browser does not support
+        <a href="media/physicshbl_magnetictrain_copy.mp4">this video</a>.
+      </p>
+    </video>
+  </body>
+</html>
